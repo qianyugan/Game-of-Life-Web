@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生命游戏</title>
+    <script src="game_of_life.js"></script>
+    <link rel="stylesheet" href="game_of_life.css">
+</head>
+
+<body>
+    <div class="input_area">
+        <div class="back"><a href="../index.html"><button>
+                    < 返回</button></a></div>
+        <div class="title">生命游戏 (Game of Life)</div>
+        <div class="input_content">
+            行数: <input type="number" min="1" value="72" style="width: 40px;" type="text" name="height"
+                id="height">&nbsp;&nbsp;
+            列数: <input type="number" min="1" value="72" style="width: 40px;" type="text" name="wide"
+                id="wide">&nbsp;&nbsp;
+            初始存活率: <input type="number" min="0" max="100" value="20" style="width: 40px;" type="text" name="live_rate"
+                id="live_rate">&nbsp;
+            <button id="create" onclick="create()">创建</button>&nbsp;&nbsp;
+            |&nbsp;&nbsp;演变延时(ms): <input type="number" min="0" value="50" style="width: 40px;" type="text"
+                name="evolve_wait" id="evolve_wait">&nbsp;
+            <button id="run" disabled onclick="run()">运行</button>&nbsp;
+            <button id="help" onclick="help()">说明</button>&nbsp;
+        </div>
+    </div>
+    <div class="mainframe" style="margin: 0;">
+        <div class="box" id="box">
+            <div id="open_show" class="open_show" onclick="create()"><span>+ 创建生命状态图</span></div>
+        </div>
+    </div>
+</body>
+
+</html>

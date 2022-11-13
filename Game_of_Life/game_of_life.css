@@ -1,0 +1,197 @@
+* {
+    margin: 0 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(248, 248, 255);
+}
+
+.open_show {
+    color: white;
+    font-size: large;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: calc(50vh + 55px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.open_show span {
+    padding: 20px;
+    border: dashed rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+
+}
+
+.open_show span:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.input_area {
+    padding: 15px 10px 15px 10px;
+    border: 0;
+    color: black;
+    height: 25px;
+    display: -webkit-flex;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.input_area::-webkit-scrollbar {
+    display: none;
+}
+
+.mainframe {
+    overflow: scroll;
+    margin: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background-color: black;
+}
+
+.mainframe::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    color: black;
+    font-weight: bold;
+    padding-right: 8%;
+}
+
+.input_content {
+    min-width: 658px;
+    display: -webkit-flex;
+    display: flex;
+    color: black;
+}
+
+.back {
+    padding-right: 20px;
+}
+
+td {
+    padding: 0;
+}
+
+td div {
+    height: 7px;
+    width: 7px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+input[type="checkbox"]+label {
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+}
+
+input[type="checkbox"]:checked+label {
+    background-color: white;
+}
+
+input[type="checkbox"]:hover+label {
+    border: 1px solid white;
+}
+
+input[type="number"] {
+    color: black;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+}
+
+input[type="number"] {
+    border: 1px solid dodgerblue;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+input[type="number"]:disabled {
+    cursor: no-drop;
+    color: rgb(126, 126, 126);
+}
+
+button {
+    color: white;
+    background-color: dodgerblue;
+    border: 3px solid dodgerblue;
+    border-radius: 3px;
+    cursor: pointer;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+    transition: all .5s;
+}
+
+button:hover {
+    background-color: rgb(19, 110, 202);
+    border: 3px solid rgb(19, 110, 202);
+}
+
+button:disabled {
+    cursor: no-drop;
+    background-color: rgb(140, 198, 255);
+    border: 3px solid rgb(140, 198, 255);
+}
+
+hr {
+    color: white;
+}
+
+tr {
+    line-height: 7px;
+    height: 7px;
+}
+
+.box {
+    height: calc(100vh - 55px);
+    width: 100vw;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+.box table {
+    border: 1px solid rgb(248, 248, 255);
+}
+
+@media screen and (max-width: 1100px) and (min-width: 985px) {
+    .back {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .title {
+        display: none;
+    }
+
+    .back {
+        display: none;
+    }
+}
